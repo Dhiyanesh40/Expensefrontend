@@ -5,7 +5,7 @@ import './App.css'
 import Print from './index.jsx'
 import react from 'react'
 import './index.jsx'
-import Form from './form.jsx';
+import Form from './Form.jsx';
 import History from './History.jsx'
 import './ExpenseForm.jsx'
 import ExpenseForm from './ExpenseForm.jsx'

@@ -1,7 +1,7 @@
 import React from 'react'
 import ExpenseForm from './ExpenseForm'
 import History from './History.jsx'
-import './style.css'
+import './Style.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import {v4 as uid} from "uuid";
@@ -16,6 +16,7 @@ function ExpenseContainer() {
     //    id:uid(),title:"Expense 2",amount:-200,
     //   }
     ]
+    
   const [expenses, setExpenses] = useState(EXPENSE)
   useEffect(() => {
     axios.get('https://expense-w0lw.onrender.com/expenses')
