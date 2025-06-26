@@ -19,7 +19,7 @@ function ExpenseContainer() {
     
   const [expenses, setExpenses] = useState(EXPENSE)
   useEffect(() => {
-    axios.get('https://expense-w0lw.onrender.com/expenses')
+    axios.get('https://expense-1-e2cu.onrender.com/expenses')
       .then(res => setExpenses(res.data))
       .catch(err => console.log(err));
   }, []);
@@ -32,9 +32,9 @@ function ExpenseContainer() {
       title: title,
       amount: parseFloat(amount)
     };
-    await axios.post('https://expense-w0lw.onrender.com/expenses', newExpense);
+    await axios.post('https://expense-1-e2cu.onrender.com/expenses', newExpense);
     
-    const res = await axios.get('https://expense-w0lw.onrender.com/expenses');
+    const res = await axios.get('https://expense-1-e2cu.onrender.com/expenses');
     setExpenses(res.data);
   } catch (err) {
     console.error('Error adding:', err);
@@ -43,9 +43,9 @@ function ExpenseContainer() {
 
 async function deleteExpense(id) {
   try {
-    await axios.delete(`https://expense-w0lw.onrender.com/expenses/${id}`);
+    await axios.delete(`https://expense-1-e2cu.onrender.com/expenses/${id}`);
     
-    const res = await axios.get('https://expense-w0lw.onrender.com/expenses');
+    const res = await axios.get('https://expense-1-e2cu.onrender.com/expenses');
     setExpenses(res.data);
   } catch (err) {
     console.error('Error deleting:', err);
