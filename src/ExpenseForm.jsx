@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import History from './history';
+import History from './History';
 
 function ExpenseForm(props) {
   const [amount,setAmount] = useState();

@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './Style.css'
 import Expenseitem from './Expenseitem'
-import History from './history' 
+import History from './History' 
 
 function Balancecont(props) {
 

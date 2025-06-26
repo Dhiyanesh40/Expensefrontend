@@ -1,6 +1,6 @@
 import React from 'react'
 import ExpenseForm from './ExpenseForm'
-import History from './history.jsx'
+import History from './History.jsx'
 import './style.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'

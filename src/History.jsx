@@ -5,7 +5,7 @@ function History(props) {
     
   return (
 
-    <div className='history'>
+    <div className='History'>
         {props.expense.map((expense)=>(
             <Expenseitem 
             key={expense.id} 
